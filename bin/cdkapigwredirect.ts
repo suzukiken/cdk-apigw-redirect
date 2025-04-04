@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
-import * as cdk from '@aws-cdk/core';
+import { App } from 'aws-cdk-lib';
 import { CdkapigwredirectStack } from '../lib/cdkapigwredirect-stack';
 
-const app = new cdk.App();
+const app = new App();
 new CdkapigwredirectStack(app, 'CdkapigwredirectStack');

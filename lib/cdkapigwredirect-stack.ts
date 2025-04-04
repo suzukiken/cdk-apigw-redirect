@@ -1,8 +1,9 @@
-import * as cdk from '@aws-cdk/core';
-import * as apigateway from '@aws-cdk/aws-apigateway'
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export class CdkapigwredirectStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+export class CdkapigwredirectStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     const PREFIX_NAME = id.toLocaleLowerCase().replace('stack', '')
